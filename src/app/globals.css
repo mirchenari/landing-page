@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    --color-primary: #5e34b1;
+    --color-secondry: #5011cc;
+    --color-text-primary: #243e63;
+    --color-text-secondry: #7c8ba1;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: estedad;
+    src: url(../../public/font/Estedad-Light.woff2) format(woff2);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    transition: 0.5s all ease;
+    box-sizing: border-box;
+}
+
+.animate-section {
+    transition: 0.1s all linear !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: estedad;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 32px;
 }
