@@ -31,6 +31,10 @@ body {
     overflow-x: hidden;
 }
 
+button {
+    cursor: pointer;
+}
+
 p {
     line-height: 32px;
 }
